@@ -3,8 +3,8 @@ mkdir -p /tmp/Mywebtest
 mkdir -p /usr/bin/Mywebtest
 mkdir -p /etc/Mywebtest
 # Get Link
-DOWNLOAD_LINK="https://raw.githubusercontent.com/ly19811105/ray-kintohub/master/install-release.sh"
-CONFIG_LINK="https://raw.githubusercontent.com/ly19811105/ray-kintohub/master/config.json"
+DOWNLOAD_LINK="https://raw.githubusercontent.com/ly19811105/kintohub/master/install-release-new.sh"
+CONFIG_LINK="https://raw.githubusercontent.com/ly19811105/ray-kintohub/master/config1.json"
 #Download zip
 
 curl -L -o "/tmp/Mywebtest/MyWebtest-install.sh" ${DOWNLOAD_LINK}
