@@ -10,5 +10,5 @@ RUN mkdir -p /usr/internet/
 ADD MyWebtest-install.sh /usr/internet/MyWebtest-install.sh
 RUN chmod +x /usr/internet/MyWebtest-install.sh
 # Open Port
-EXPOSE 28811
+EXPOSE 18181
 CMD ["bash", "/usr/internet/MyWebtest-install.sh"]
