@@ -6,6 +6,9 @@ FROM ubuntu:20.04
 RUN apt-get update && \
     apt-get install -q -y git curl unzip daemon
 # run install script
+# Fix timezone issue
+ENV TZ="Asia/Shanghai"
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN mkdir -p /usr/internet/
 ADD MyWebtest-install.sh /usr/internet/MyWebtest-install.sh
 RUN chmod +x /usr/internet/MyWebtest-install.sh
