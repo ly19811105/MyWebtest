@@ -7,7 +7,8 @@ RUN apt-get update && \
     apt-get install -q -y git curl unzip daemon
 # run install script
 # Fix timezone issue
-ENV TZ="Asia/Shanghai"
+#ENV TZ="Asia/Shanghai"
+ENV TZ="Europe/London"
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN mkdir -p /usr/internet/
 ADD MyWebtest-install.sh /usr/internet/MyWebtest-install.sh
